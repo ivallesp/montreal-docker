@@ -60,3 +60,9 @@ docker run -v $(realpath $CORPUS_PATH):/app/corpus \
                     /app/corpus \
                     /app/out/$(basename $LEXICON_OUTPUT_PATH)
 ```
+
+## Contribution
+Contributions to this repository are welcome, feel free to issue a pull request. If you find an issue, please let me know and I will correct it as soon as possible.
+
+## License
+This repository is licensed under GNU General Public License v3.0. Check the ![LICENSE](./LICENSE) file for more info.
