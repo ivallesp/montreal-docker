@@ -1,4 +1,3 @@
-#FROM alpine:3.10
 FROM kaldiasr/kaldi:2020-09
 
 # Install curl
