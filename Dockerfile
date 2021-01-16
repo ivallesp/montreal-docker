@@ -30,6 +30,6 @@ RUN mv *.zip pretrained_models
 # Generate dummy script for easy interaction from entrypoint
 RUN echo 'echo "$($@)"' > runner.sh
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/bash", "runner.sh"]
 
 
