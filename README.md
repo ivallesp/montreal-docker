@@ -30,7 +30,7 @@ OUTPUT_PATH=test/alignments
 docker run -v $(realpath $CORPUS_PATH):/app/corpus \
            -v $(realpath $LEXICON_PATH):/app/lexicon.txt \
            -v $(realpath $OUTPUT_PATH):/app/out \
-           mfa \
+           ivallesp/mfa \
            ./bin/mfa_align \
                 /app/corpus \
                 /app/lexicon.txt \
@@ -54,7 +54,7 @@ LEXICON_OUTPUT_PATH=test/lexicon.txt
 
 docker run -v $(realpath $CORPUS_PATH):/app/corpus \
            -v $(dirname $(realpath $LEXICON_OUTPUT_PATH)):/app/out \
-           mfa \
+           ivallesp/mfa \
            ./bin/mfa_generate_dictionary \
                     $G2P_PATH \
                     /app/corpus \
@@ -62,7 +62,13 @@ docker run -v $(realpath $CORPUS_PATH):/app/corpus \
 ```
 
 ## Contribution
+
 Contributions to this repository are welcome, feel free to issue a pull request. If you find an issue, please let me know and I will correct it as soon as possible.
 
 ## License
-This repository is licensed under GNU General Public License v3.0. Check the ![LICENSE](./LICENSE) file for more info.
+
+This repository is licensed under GNU General Public License v3.0. Check the 
+
+![LICENSE](./LICENSE)
+
+ file for more info.
