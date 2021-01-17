@@ -67,8 +67,4 @@ Contributions to this repository are welcome, feel free to issue a pull request.
 
 ## License
 
-This repository is licensed under GNU General Public License v3.0. Check the 
-
-![LICENSE](./LICENSE)
-
- file for more info.
+This repository is licensed under GNU General Public License v3.0. Check the [LICENSE](./LICENSE) file for more info.
