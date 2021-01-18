@@ -2,7 +2,7 @@
 
 I have been struggling to make MFA work on my local machine, so I bundled everything into a Docker container so that you don't have to go through the installation process anymore. I have used version 1.1.0.beta-2 of MFA, and the Kaldi official docker image as base.
 
-I have tested the `mfa_align` and the `mfa_generate_dictionary` commands and they are working like a charm.
+I tested the `mfa_align` and the `mfa_generate_dictionary` commands and they are working like a charm.
 
 ## How does it work?
 
