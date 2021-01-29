@@ -27,6 +27,12 @@ RUN for FN in $(curl $ACC_BASE_URL/index.txt); do echo $ACC_BASE_URL/$FN.zip && 
 # Move all the models to the pretrained_models folder
 RUN mv *.zip pretrained_models
 
+# Download the proveded lexicons
+ARG DIC_BASE_URL=https://raw.githubusercontent.com/MontrealCorpusTools/mfa-models/$MONTREAL_COMMIT/dictionary
+RUN for FN in $(curl $DIC_BASE_URL/index.txt); do echo $DIC_BASE_URL/$FN.dict && wget $DIC_BASE_URL/$FN.dict; done
+RUN mkdir dictionaries && mv *.dict dictionaries
+
+
 # Generate dummy script for easy interaction from entrypoint
 RUN echo 'echo "$($@)"' > runner.sh
 
